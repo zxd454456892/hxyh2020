@@ -1,5 +1,4 @@
 from selenium import webdriver
-web1=webdriver.Firefox()
 import unittest
 import  time
 
@@ -24,9 +23,6 @@ class Tceshi(unittest.TestCase):
 
     def tearDown(self):
         time.sleep(2)
-
-        self.web1.close()
-        self.web1.quit()
 
 if __name__ == '__main__':
     unittest.main()
