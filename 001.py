@@ -53,7 +53,6 @@ class Baidul_lianpao(unittest.TestCase):
         print(a)
 
     def test_09(self):
-
         self.web1.get("https://www.baidu.com")
         time.sleep(3)
         ActionChains(self.web1).move_to_element(self.web1.find_element_by_id("s-usersetting-top")).perform()
